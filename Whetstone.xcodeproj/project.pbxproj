@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7641668020021E5600214984 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7641667F20021E5600214984 /* main.swift */; };
+		76612FDF200A130100E5A3B2 /* Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76612FDE200A130100E5A3B2 /* Tree.swift */; };
 		76CD6C5520037CDA00BD2B16 /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CD6C5420037CDA00BD2B16 /* Heap.swift */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +27,7 @@
 /* Begin PBXFileReference section */
 		7641667C20021E5600214984 /* Whetstone */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Whetstone; sourceTree = BUILT_PRODUCTS_DIR; };
 		7641667F20021E5600214984 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		76612FDE200A130100E5A3B2 /* Tree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tree.swift; sourceTree = "<group>"; };
 		76CD6C5420037CDA00BD2B16 /* Heap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heap.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -59,10 +61,27 @@
 		7641667E20021E5600214984 /* Whetstone */ = {
 			isa = PBXGroup;
 			children = (
+				76612FE0200B8EDD00E5A3B2 /* Graph */,
+				76612FDD200A12F400E5A3B2 /* Tree */,
 				76CD6C5320037C8D00BD2B16 /* Heap */,
 				7641667F20021E5600214984 /* main.swift */,
 			);
 			path = Whetstone;
+			sourceTree = "<group>";
+		};
+		76612FDD200A12F400E5A3B2 /* Tree */ = {
+			isa = PBXGroup;
+			children = (
+				76612FDE200A130100E5A3B2 /* Tree.swift */,
+			);
+			path = Tree;
+			sourceTree = "<group>";
+		};
+		76612FE0200B8EDD00E5A3B2 /* Graph */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Graph;
 			sourceTree = "<group>";
 		};
 		76CD6C5320037C8D00BD2B16 /* Heap */ = {
@@ -131,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76612FDF200A130100E5A3B2 /* Tree.swift in Sources */,
 				7641668020021E5600214984 /* main.swift in Sources */,
 				76CD6C5520037CDA00BD2B16 /* Heap.swift in Sources */,
 			);
