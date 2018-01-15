@@ -14,9 +14,24 @@ import Foundation
 ////tree.printPreOrder(treeNode: tree.root)
 //tree.printInOrder(treeNode: tree.root)
 
-class TreeNode {
+
+
+class copyTreeNodeContainer {
+    var dataNumber = 0
+    
+}
+
+class TreeNode: Hashable {
     var dataNumber = 0
     var treeNodes = [TreeNode]()
+    
+    var hashValue: Int {
+        return self.dataNumber
+    }
+    
+    static func ==(lhs: TreeNode, rhs: TreeNode) -> Bool {
+        return lhs.dataNumber == rhs.dataNumber
+    }
 }
 
 class Tree: NSObject {
@@ -54,6 +69,41 @@ class Tree: NSObject {
         root = node1
     }
     
+    func copyNode(node: TreeNode) -> TreeNode{
+        let copyNode = TreeNode()
+        copyNode.dataNumber = node.dataNumber
+        copyNode.treeNodes = node.treeNodes
+        return copyNode
+    }
+    
+    func pointAllNodesToNewCopies(node: TreeNode, treeHasMap: [TreeNode: TreeNode]) {
+        let oldNodesRef = node.treeNodes
+        var newNodesRef = [TreeNode]()
+        for node in oldNodesRef {
+            newNodesRef.append(treeHasMap[node]!)
+        }
+        node.treeNodes = newNodesRef
+    }
+    
+    func copyTree() -> TreeNode{
+        var treeHashMap = [TreeNode: TreeNode]()
+        var queue = [TreeNode]()
+        var tempNode: TreeNode? =  root
+        while tempNode != nil {
+            treeHashMap[tempNode!] = copyNode(node: tempNode!)
+            queue.append(contentsOf: tempNode!.treeNodes)
+            tempNode = queue.first
+            if queue.first != nil{
+                queue.remove(at: 0)
+            }
+        }
+        
+        for key in treeHashMap.keys {
+            pointAllNodesToNewCopies(node: treeHashMap[key]!, treeHasMap: treeHashMap)
+        }
+        return treeHashMap[root]!
+    }
+    
     func printBFS () {
         var queue = [TreeNode]()
         var tempNode: TreeNode? =  root
@@ -68,7 +118,7 @@ class Tree: NSObject {
     }
     
     func printPreOrder(treeNode: TreeNode) {
-        print (String(treeNode.dataNumber) + "" )
+        print (String(treeNode.dataNumber) + "" + " address " + String(format: "%p", unsafeBitCast(treeNode, to: Int.self)))
         for node in treeNode.treeNodes {
             printPreOrder(treeNode: node)
         }

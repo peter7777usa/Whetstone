@@ -10,7 +10,11 @@ import Foundation
 
 print("Hello, World! \n")
 
-let graph = Graph()
-graph.constructSampleGraph1()
-graph.printBFS(nodeIndex: 0)
+let tree = Tree()
+tree.constructTestTree()
+
+tree.printPreOrder(treeNode: tree.root)
+
+tree.printPreOrder(treeNode: tree.copyTree())
+
 

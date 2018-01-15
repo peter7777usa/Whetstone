@@ -8,6 +8,11 @@
 
 import Foundation
 
+//let graph = Graph()
+//graph.constructSampleGraph1()
+////graph.printBFS(nodeIndex: 5)
+//graph.printDFS(nodeIndex: 0)
+
 class GraphNode {
     var dataNumber = 0
     var graphNodes = [GraphNode]()
@@ -75,6 +80,16 @@ class Graph: NSObject {
         clearVisited()
     }
     
+    func findNodeIndexBasedOnContent (content: Int) -> Int {
+        
+        for i in 0 ..< graph.count{
+            if graph[i].dataNumber == content {
+                return i
+            }
+        }
+        return 0
+    }
+    
     func printBFS(nodeIndex: Int) {
         var queue = [GraphNode]()
         var tempNode: GraphNode? = graph[nodeIndex]
@@ -91,6 +106,19 @@ class Graph: NSObject {
             tempNode = queue.first
             if queue.first != nil{
                 queue.remove(at: 0)
+            }
+        }
+    }
+    
+    func printDFS(nodeIndex: Int){
+        if !visited[graph[nodeIndex].dataNumber]!{
+            print (String(graph[nodeIndex].dataNumber) + "" )
+            visited[graph[nodeIndex].dataNumber] = true
+        }
+        for node in graph[nodeIndex].graphNodes {
+            if !visited[node.dataNumber]!{
+                
+                printDFS(nodeIndex: findNodeIndexBasedOnContent(content: node.dataNumber))
             }
         }
     }
