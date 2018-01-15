@@ -8,6 +8,12 @@
 
 import Foundation
 
+//let tree = Tree()
+//tree.constructTestTree()
+////tree.printBFS()
+////tree.printPreOrder(treeNode: tree.root)
+//tree.printInOrder(treeNode: tree.root)
+
 class TreeNode {
     var dataNumber = 0
     var treeNodes = [TreeNode]()
