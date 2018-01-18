@@ -10,6 +10,7 @@
 		7641668020021E5600214984 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7641667F20021E5600214984 /* main.swift */; };
 		76612FDF200A130100E5A3B2 /* Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76612FDE200A130100E5A3B2 /* Tree.swift */; };
 		76612FE2200B916F00E5A3B2 /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76612FE1200B916F00E5A3B2 /* Graph.swift */; };
+		76612FE5200D382400E5A3B2 /* Fibonacci.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76612FE4200D382400E5A3B2 /* Fibonacci.swift */; };
 		76CD6C5520037CDA00BD2B16 /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CD6C5420037CDA00BD2B16 /* Heap.swift */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +31,7 @@
 		7641667F20021E5600214984 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		76612FDE200A130100E5A3B2 /* Tree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tree.swift; sourceTree = "<group>"; };
 		76612FE1200B916F00E5A3B2 /* Graph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
+		76612FE4200D382400E5A3B2 /* Fibonacci.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fibonacci.swift; sourceTree = "<group>"; };
 		76CD6C5420037CDA00BD2B16 /* Heap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heap.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,7 +65,7 @@
 		7641667E20021E5600214984 /* Whetstone */ = {
 			isa = PBXGroup;
 			children = (
-				76612FE3200CEC7000E5A3B2 /* UIView */,
+				76612FE3200CEC7000E5A3B2 /* Fibonacci */,
 				76612FE0200B8EDD00E5A3B2 /* Graph */,
 				76612FDD200A12F400E5A3B2 /* Tree */,
 				76CD6C5320037C8D00BD2B16 /* Heap */,
@@ -88,11 +90,12 @@
 			path = Graph;
 			sourceTree = "<group>";
 		};
-		76612FE3200CEC7000E5A3B2 /* UIView */ = {
+		76612FE3200CEC7000E5A3B2 /* Fibonacci */ = {
 			isa = PBXGroup;
 			children = (
+				76612FE4200D382400E5A3B2 /* Fibonacci.swift */,
 			);
-			path = UIView;
+			path = Fibonacci;
 			sourceTree = "<group>";
 		};
 		76CD6C5320037C8D00BD2B16 /* Heap */ = {
@@ -161,6 +164,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76612FE5200D382400E5A3B2 /* Fibonacci.swift in Sources */,
 				76612FE2200B916F00E5A3B2 /* Graph.swift in Sources */,
 				76612FDF200A130100E5A3B2 /* Tree.swift in Sources */,
 				7641668020021E5600214984 /* main.swift in Sources */,
