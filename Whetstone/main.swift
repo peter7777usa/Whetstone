@@ -13,5 +13,7 @@ print("Hello, World! \n")
 let graph = Graph()
 graph.constructSampleGraph()
 graph.printBFS(nodeIndex: 0)
-
+let shortestPath = DijkstraShortestPath()
+shortestPath.graph = graph
+shortestPath.populateShortestDistanceTable(node: graph.graph.first!)
 

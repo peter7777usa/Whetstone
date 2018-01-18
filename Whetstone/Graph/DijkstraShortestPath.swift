@@ -49,27 +49,35 @@ class DijkstraShortestPath: NSObject {
                     }
                 }
             }
+            currentPathInfo?.visited = true
             currentPathInfo = getNextClosestUnvisitedNode(shortestKnownDest: shortestKnownDest)
         }
+        
     }
     
-    func getNextClosestUnvisitedNode(shortestKnownDest: [GraphNode: PathInfo]) -> PathInfo? {
+    func getNextClosestUnvisitedNode(shortestKnownDest: [GraphNode: PathInfo]) -> PathInfo? {  //Probably should Heap sort this
+        
         var shortestUnVisistedNode: PathInfo? = nil
+        var allUnvisitedPath = [PathInfo]()
+        
         for pathInfo in shortestKnownDest.values {
-            if let unvisitedNode =  shortestUnVisistedNode {
-                if pathInfo.shortestDistance < unvisitedNode.shortestDistance {
-                     shortestUnVisistedNode = pathInfo
-                }
-            }else {
+
                 if pathInfo.visited == false {
+                    allUnvisitedPath.append(pathInfo)
+                }
+        }
+        
+        if let firstUnvisitedPathInfo = allUnvisitedPath.first {
+            shortestUnVisistedNode = firstUnvisitedPathInfo
+            for pathInfo in allUnvisitedPath {
+                if pathInfo.shortestDistance < shortestUnVisistedNode!.shortestDistance {
                     shortestUnVisistedNode = pathInfo
                 }
             }
         }
+        
         return shortestUnVisistedNode
     }
+
     
-    func calculateDistanceToAdjacentNodesWithNode(pathInfo: PathInfo) {
-        
-    }
 }
