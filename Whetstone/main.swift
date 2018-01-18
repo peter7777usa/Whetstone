@@ -10,6 +10,8 @@ import Foundation
 
 print("Hello, World! \n")
 
-let fib = Fibonacci()
-print (fib.fib(i: 9))
+let graph = Graph()
+graph.constructSampleGraph()
+graph.printBFS(nodeIndex: 0)
+
 
