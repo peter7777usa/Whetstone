@@ -35,6 +35,112 @@ class Graph: NSObject {
     var graph = [GraphNode]()
     
     var visited = [GraphNode: Bool]()
+    
+    func constructSampleGraph2() {
+        let nodeA = GraphNode()
+        nodeA.data = "A"
+        
+        let nodeB = GraphNode()
+        nodeB.data = "B"
+        
+        let nodeC = GraphNode()
+        nodeC.data = "C"
+        
+        let nodeD = GraphNode()
+        nodeD.data = "D"
+        
+        let nodeE = GraphNode()
+        nodeE.data = "E"
+        
+        graph.append(nodeA)
+        graph.append(nodeB)
+        graph.append(nodeC)
+        graph.append(nodeD)
+        graph.append(nodeE)
+        
+        //A
+        let connectedNodeAB = ConnectedNode()
+        connectedNodeAB.node = nodeB
+        connectedNodeAB.weight = 7
+        
+        let connectedNodeAC = ConnectedNode()
+        connectedNodeAC.node = nodeC
+        connectedNodeAC.weight = 3
+        
+        nodeA.connectedNodes.append(connectedNodeAB)
+        nodeA.connectedNodes.append(connectedNodeAC)
+        
+        //B
+        let connectedNodeBA = ConnectedNode()
+        connectedNodeBA.node = nodeA
+        connectedNodeBA.weight = 7
+        
+        let connectedNodeBC = ConnectedNode()
+        connectedNodeBC.node = nodeC
+        connectedNodeBC.weight = 1
+        
+        let connectedNodeBD = ConnectedNode()
+        connectedNodeBD.node = nodeD
+        connectedNodeBD.weight = 2
+        
+        let connectedNodeBE = ConnectedNode()
+        connectedNodeBE.node = nodeE
+        connectedNodeBE.weight = 6
+        
+        nodeB.connectedNodes.append(connectedNodeBC)
+        nodeB.connectedNodes.append(connectedNodeBA)
+        nodeB.connectedNodes.append(connectedNodeBD)
+        nodeB.connectedNodes.append(connectedNodeBE)
+        
+        //C
+        let connectedNodeCA = ConnectedNode()
+        connectedNodeCA.node = nodeA
+        connectedNodeCA.weight = 3
+        
+        let connectedNodeCB = ConnectedNode()
+        connectedNodeCB.node = nodeB
+        connectedNodeCB.weight = 1
+        
+        
+        let connectedNodeCD = ConnectedNode()
+        connectedNodeCD.node = nodeD
+        connectedNodeCD.weight = 2
+
+        nodeC.connectedNodes.append(connectedNodeCD)
+        nodeC.connectedNodes.append(connectedNodeCA)
+        nodeC.connectedNodes.append(connectedNodeCB)
+        
+        //D
+        let connectedNodeDE = ConnectedNode()
+        connectedNodeDE.node = nodeE
+        connectedNodeDE.weight = 4
+        
+        let connectedNodeDC = ConnectedNode()
+        connectedNodeDC.node = nodeC
+        connectedNodeDC.weight = 2
+        
+        let connectedNodeDB = ConnectedNode()
+        connectedNodeDB.node = nodeB
+        connectedNodeDB.weight = 2
+        
+        nodeD.connectedNodes.append(connectedNodeDE)
+        nodeD.connectedNodes.append(connectedNodeDC)
+        nodeD.connectedNodes.append(connectedNodeDB)
+        
+        //E
+        let connectedNodeEB = ConnectedNode()
+        connectedNodeEB.node = nodeB
+        connectedNodeEB.weight = 6
+        
+        let connectedNodeED = ConnectedNode()
+        connectedNodeED.node = nodeD
+        connectedNodeED.weight = 4
+        
+        nodeE.connectedNodes.append(connectedNodeEB)
+        nodeE.connectedNodes.append(connectedNodeED)
+        
+        clearVisited()
+    }
 
     func constructSampleGraph() {
         let nodeA = GraphNode()

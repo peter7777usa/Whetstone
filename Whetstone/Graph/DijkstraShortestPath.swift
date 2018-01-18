@@ -53,6 +53,7 @@ class DijkstraShortestPath: NSObject {
             currentPathInfo = getNextClosestUnvisitedNode(shortestKnownDest: shortestKnownDest)
         }
         
+        nodeDistanceTable[node] = shortestKnownDest
     }
     
     func getNextClosestUnvisitedNode(shortestKnownDest: [GraphNode: PathInfo]) -> PathInfo? {  //Probably should Heap sort this
@@ -79,5 +80,12 @@ class DijkstraShortestPath: NSObject {
         return shortestUnVisistedNode
     }
 
-    
+    func printShortestDistanceTable() {
+        for key in nodeDistanceTable.keys{
+            print ("\nFrom Node " + key.data)
+            for pathInfo in (nodeDistanceTable[key]?.values)! {
+                print ("  to Node " + pathInfo.destinationNode.data + " " + String(pathInfo.shortestDistance))
+            }
+        }
+    }
 }
