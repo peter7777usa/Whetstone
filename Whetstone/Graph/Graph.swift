@@ -13,94 +13,147 @@ import Foundation
 ////graph.printBFS(nodeIndex: 5)
 //graph.printDFS(nodeIndex: 0)
 
-class GraphNode {
-    var dataNumber = 0
-    var graphNodes = [GraphNode]()
+class ConnectedNode {
+    var node = GraphNode()
+    var weight = 0
+}
+
+class GraphNode: Hashable {
+    var data = ""
+    var connectedNodes = [ConnectedNode]()
+    
+    var hashValue: Int {
+        return data.hashValue
+    }
+    
+    static func == (lhs: GraphNode, rhs: GraphNode) -> Bool {
+        return lhs.hashValue == rhs.hashValue
+    }
 }
 
 class Graph: NSObject {
     var graph = [GraphNode]()
     
-    var visited = [Int: Bool]()
-    
-    func clearVisited() {
-        for node in graph {
-            visited[node.dataNumber] = false
-        }
-    }
-    
-    func constructSampleGraph1() {
+    var visited = [GraphNode: Bool]()
+
+    func constructSampleGraph() {
+        let nodeA = GraphNode()
+        nodeA.data = "A"
         
-        let node1 = GraphNode()
-        node1.dataNumber = 1
+        let nodeB = GraphNode()
+        nodeB.data = "B"
         
-        let node2 = GraphNode()
-        node2.dataNumber = 2
+        let nodeC = GraphNode()
+        nodeC.data = "C"
         
-        let node3 = GraphNode()
-        node3.dataNumber = 3
+        let nodeD = GraphNode()
+        nodeD.data = "D"
         
-        let node4 = GraphNode()
-        node4.dataNumber = 4
+        let nodeE = GraphNode()
+        nodeE.data = "E"
         
-        let node5 = GraphNode()
-        node5.dataNumber = 5
+        graph.append(nodeA)
+        graph.append(nodeB)
+        graph.append(nodeC)
+        graph.append(nodeD)
+        graph.append(nodeE)
         
-        let node6 = GraphNode()
-        node6.dataNumber = 6
+        //A
+        let connectedNodeAE = ConnectedNode()
+        connectedNodeAE.node = nodeE
+        connectedNodeAE.weight = 4
         
-        node1.graphNodes.append(node2)
-        node1.graphNodes.append(node3)
+        let connectedNodeAC = ConnectedNode()
+        connectedNodeAC.node = nodeC
+        connectedNodeAC.weight = 2
         
-        node2.graphNodes.append(node1)
-        node2.graphNodes.append(node5)
-        node2.graphNodes.append(node4)
+        let connectedNodeAB = ConnectedNode()
+        connectedNodeAB.node = nodeB
+        connectedNodeAB.weight = 3
         
-        node3.graphNodes.append(node5)
-        node3.graphNodes.append(node1)
+        nodeA.connectedNodes.append(connectedNodeAE)
+        nodeA.connectedNodes.append(connectedNodeAC)
+        nodeA.connectedNodes.append(connectedNodeAB)
         
-        node4.graphNodes.append(node2)
-        node4.graphNodes.append(node5)
-        node4.graphNodes.append(node6)
+        //B
+        let connectedNodeBA = ConnectedNode()
+        connectedNodeBA.node = nodeA
+        connectedNodeBA.weight = 3
+       
+        let connectedNodeBC = ConnectedNode()
+        connectedNodeBC.node = nodeC
+        connectedNodeBC.weight = 8
         
-        node5.graphNodes.append(node6)
-        node5.graphNodes.append(node4)
-        node5.graphNodes.append(node2)
-        node5.graphNodes.append(node3)
+        nodeB.connectedNodes.append(connectedNodeBC)
+        nodeB.connectedNodes.append(connectedNodeBA)
         
-        node6.graphNodes.append(node4)
-        node6.graphNodes.append(node5)
+        //C
+        let connectedNodeCD = ConnectedNode()
+        connectedNodeCD.node = nodeD
+        connectedNodeCD.weight = 1
         
-        graph.append(node1)
-        graph.append(node2)
-        graph.append(node3)
-        graph.append(node4)
-        graph.append(node5)
-        graph.append(node6)
+        let connectedNodeCA = ConnectedNode()
+        connectedNodeCA.node = nodeA
+        connectedNodeCA.weight = 2
+        
+        let connectedNodeCB = ConnectedNode()
+        connectedNodeCB.node = nodeB
+        connectedNodeCB.weight = 8
+        
+        nodeC.connectedNodes.append(connectedNodeCD)
+        nodeC.connectedNodes.append(connectedNodeCA)
+        nodeC.connectedNodes.append(connectedNodeCB)
+        
+        //D
+        let connectedNodeDE = ConnectedNode()
+        connectedNodeDE.node = nodeE
+        connectedNodeDE.weight = 3
+        
+        let connectedNodeDC = ConnectedNode()
+        connectedNodeDC.node = nodeC
+        connectedNodeDC.weight = 1
+        
+        nodeD.connectedNodes.append(connectedNodeDE)
+        nodeD.connectedNodes.append(connectedNodeDC)
+        
+        //E
+        let connectedNodeEA = ConnectedNode()
+        connectedNodeEA.node = nodeA
+        connectedNodeEA.weight = 4
+        
+        let connectedNodeED = ConnectedNode()
+        connectedNodeED.node = nodeD
+        connectedNodeED.weight = 3
+        
+        nodeE.connectedNodes.append(connectedNodeEA)
+        nodeE.connectedNodes.append(connectedNodeED)
+        
         clearVisited()
     }
     
-    func findNodeIndexBasedOnContent (content: Int) -> Int {
-        
-        for i in 0 ..< graph.count{
-            if graph[i].dataNumber == content {
-                return i
-            }
+    func clearVisited() {
+        for node in graph {
+            visited[node] = false
         }
-        return 0
     }
     
     func printBFS(nodeIndex: Int) {
+        
         var queue = [GraphNode]()
         var tempNode: GraphNode? = graph[nodeIndex]
+        
         while tempNode != nil {
-            if !visited[tempNode!.dataNumber]!{
-                print (String(tempNode!.dataNumber) + "" )
-                visited[tempNode!.dataNumber] = true
+            
+            if !visited[tempNode!]!{
+                print (String(tempNode!.data) + " " )
+                for node in (tempNode?.connectedNodes)! {
+                    print (" - " + String(node.node.data) + ", weight = ", String(node.weight) )
+                }
+                visited[tempNode!] = true
             }
-            for node in tempNode!.graphNodes {
-                if !visited[node.dataNumber]! {
-                    queue.append(node)
+            for node in tempNode!.connectedNodes {
+                if !visited[node.node]! {
+                    queue.append(node.node)
                 }
             }
             tempNode = queue.first
@@ -109,17 +162,29 @@ class Graph: NSObject {
             }
         }
     }
-    
-    func printDFS(nodeIndex: Int){
-        if !visited[graph[nodeIndex].dataNumber]!{
-            print (String(graph[nodeIndex].dataNumber) + "" )
-            visited[graph[nodeIndex].dataNumber] = true
-        }
-        for node in graph[nodeIndex].graphNodes {
-            if !visited[node.dataNumber]!{
-                
-                printDFS(nodeIndex: findNodeIndexBasedOnContent(content: node.dataNumber))
-            }
-        }
-    }
 }
+
+//    func findNodeIndexBasedOnContent (content: Int) -> Int {
+//
+//        for i in 0 ..< graph.count{
+//            if graph[i].dataNumber == content {
+//                return i
+//            }
+//        }
+//        return 0
+//    }
+//
+
+//
+//    func printDFS(nodeIndex: Int){
+//        if !visited[graph[nodeIndex].dataNumber]!{
+//            print (String(graph[nodeIndex].dataNumber) + "" )
+//            visited[graph[nodeIndex].dataNumber] = true
+//        }
+//        for node in graph[nodeIndex].graphNodes {
+//            if !visited[node.dataNumber]!{
+//
+//                printDFS(nodeIndex: findNodeIndexBasedOnContent(content: node.dataNumber))
+//            }
+//        }
+//    }

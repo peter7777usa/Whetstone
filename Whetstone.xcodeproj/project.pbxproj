@@ -10,6 +10,7 @@
 		7641668020021E5600214984 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7641667F20021E5600214984 /* main.swift */; };
 		76612FDF200A130100E5A3B2 /* Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76612FDE200A130100E5A3B2 /* Tree.swift */; };
 		76612FE2200B916F00E5A3B2 /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76612FE1200B916F00E5A3B2 /* Graph.swift */; };
+		768860AD20100BD800A853FA /* DijkstraShortestPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768860AC20100BD800A853FA /* DijkstraShortestPath.swift */; };
 		76CD6C5520037CDA00BD2B16 /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CD6C5420037CDA00BD2B16 /* Heap.swift */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +31,7 @@
 		7641667F20021E5600214984 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		76612FDE200A130100E5A3B2 /* Tree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tree.swift; sourceTree = "<group>"; };
 		76612FE1200B916F00E5A3B2 /* Graph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
+		768860AC20100BD800A853FA /* DijkstraShortestPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DijkstraShortestPath.swift; sourceTree = "<group>"; };
 		76CD6C5420037CDA00BD2B16 /* Heap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heap.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,7 +65,6 @@
 		7641667E20021E5600214984 /* Whetstone */ = {
 			isa = PBXGroup;
 			children = (
-				76612FE3200CEC7000E5A3B2 /* UIView */,
 				76612FE0200B8EDD00E5A3B2 /* Graph */,
 				76612FDD200A12F400E5A3B2 /* Tree */,
 				76CD6C5320037C8D00BD2B16 /* Heap */,
@@ -84,15 +85,9 @@
 			isa = PBXGroup;
 			children = (
 				76612FE1200B916F00E5A3B2 /* Graph.swift */,
+				768860AC20100BD800A853FA /* DijkstraShortestPath.swift */,
 			);
 			path = Graph;
-			sourceTree = "<group>";
-		};
-		76612FE3200CEC7000E5A3B2 /* UIView */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = UIView;
 			sourceTree = "<group>";
 		};
 		76CD6C5320037C8D00BD2B16 /* Heap */ = {
@@ -161,6 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				768860AD20100BD800A853FA /* DijkstraShortestPath.swift in Sources */,
 				76612FE2200B916F00E5A3B2 /* Graph.swift in Sources */,
 				76612FDF200A130100E5A3B2 /* Tree.swift in Sources */,
 				7641668020021E5600214984 /* main.swift in Sources */,
