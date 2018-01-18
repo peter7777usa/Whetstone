@@ -22,14 +22,27 @@ class DijkstraShortestPath: NSObject {
     var graph = Graph()
     
     func populateDistanceTable(node: GraphNode) {
-        //var pathInfo = [PathInfo]()
+        var shortestKnownDest = [PathInfo]()
+        var pathInfo = PathInfo()
+        pathInfo.destinationNode = node
+        pathInfo.shortestDistance = 0
+        shortestKnownDest.append(pathInfo)
         
     }
     
-    func findShortestDistanceOnNode(node: GraphNode) {
-        let smallestDistance = node.connectedNodes.first?.weight
-        for node in node.connectedNodes {
-            smallestDistance
+    func findShortestDistanceOnNode(shortestKnownDest: [PathInfo]) {
+        var shortestUnVisistedNode: PathInfo? = nil
+        for pathInfo in shortestKnownDest {
+            if pathInfo.visited == false && pathInfo.shortestDistance < shortestUnVisistedNode!.shortestDistance{
+                shortestUnVisistedNode = pathInfo
+            }
         }
+        
+//        let smallestDistance = node.connectedNodes.first?.weight
+//        for node in node.connectedNodes {
+//            if smallestDistance! > node.weight {
+//                smallestDistance == node.weight
+//            }
+//        }
     }
 }
