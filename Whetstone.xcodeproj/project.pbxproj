@@ -13,6 +13,7 @@
 		76612FE5200D382400E5A3B2 /* Fibonacci.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76612FE4200D382400E5A3B2 /* Fibonacci.swift */; };
 		768860AD20100BD800A853FA /* DijkstraShortestPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768860AC20100BD800A853FA /* DijkstraShortestPath.swift */; };
 		76CD6C5520037CDA00BD2B16 /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CD6C5420037CDA00BD2B16 /* Heap.swift */; };
+		76F7B50F2016931700C4CD12 /* Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F7B50E2016931700C4CD12 /* Sorting.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,6 +36,7 @@
 		76612FE4200D382400E5A3B2 /* Fibonacci.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fibonacci.swift; sourceTree = "<group>"; };
 		768860AC20100BD800A853FA /* DijkstraShortestPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DijkstraShortestPath.swift; sourceTree = "<group>"; };
 		76CD6C5420037CDA00BD2B16 /* Heap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heap.swift; sourceTree = "<group>"; };
+		76F7B50E2016931700C4CD12 /* Sorting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sorting.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 		7641667E20021E5600214984 /* Whetstone */ = {
 			isa = PBXGroup;
 			children = (
+				76F7B50D2016930300C4CD12 /* Sort */,
 				76612FE3200CEC7000E5A3B2 /* Fibonacci */,
 				76612FE0200B8EDD00E5A3B2 /* Graph */,
 				76612FDD200A12F400E5A3B2 /* Tree */,
@@ -107,6 +110,14 @@
 				76CD6C5420037CDA00BD2B16 /* Heap.swift */,
 			);
 			path = Heap;
+			sourceTree = "<group>";
+		};
+		76F7B50D2016930300C4CD12 /* Sort */ = {
+			isa = PBXGroup;
+			children = (
+				76F7B50E2016931700C4CD12 /* Sorting.swift */,
+			);
+			path = Sort;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,6 +182,7 @@
 				768860AD20100BD800A853FA /* DijkstraShortestPath.swift in Sources */,
 				76612FE2200B916F00E5A3B2 /* Graph.swift in Sources */,
 				76612FDF200A130100E5A3B2 /* Tree.swift in Sources */,
+				76F7B50F2016931700C4CD12 /* Sorting.swift in Sources */,
 				7641668020021E5600214984 /* main.swift in Sources */,
 				76CD6C5520037CDA00BD2B16 /* Heap.swift in Sources */,
 			);

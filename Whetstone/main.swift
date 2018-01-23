@@ -10,10 +10,7 @@ import Foundation
 
 print("Hello, World! \n")
 
-let graph = Graph()
-graph.constructSampleGraph2()
-graph.printBFS(nodeIndex: 0)
-let shortestPath = DijkstraShortestPath()
-shortestPath.graph = graph
-shortestPath.populateShortestDistanceTable(node: graph.graph.first!)
-shortestPath.printShortestDistanceTable()
+var unsortedArray = [ 58, 99, 12, 22, 23, 22]
+print ("sorting Array ", unsortedArray)
+var quickSortedArray = Sorting.quickSort(sortingArray: &unsortedArray, fromIndex: 0, toIndex: unsortedArray.count - 1)
+print ("sorted ", quickSortedArray)

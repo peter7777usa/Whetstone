@@ -117,6 +117,15 @@ class Tree: NSObject {
         }
     }
     
+    func printPreOrderStack(treeNode: TreeNode) {
+        
+        
+        print (String(treeNode.dataNumber) + "" + " address " + String(format: "%p", unsafeBitCast(treeNode, to: Int.self)))
+        for node in treeNode.treeNodes {
+            printPreOrder(treeNode: node)
+        }
+    }
+    
     func printPreOrder(treeNode: TreeNode) {
         print (String(treeNode.dataNumber) + "" + " address " + String(format: "%p", unsafeBitCast(treeNode, to: Int.self)))
         for node in treeNode.treeNodes {
