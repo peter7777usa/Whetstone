@@ -10,7 +10,3 @@ import Foundation
 
 print("Hello, World! \n")
 
-var unsortedArray = [ 58, 99, 12, 22, 23, 22]
-print ("sorting Array ", unsortedArray)
-var quickSortedArray = Sorting.quickSort(sortingArray: &unsortedArray, fromIndex: 0, toIndex: unsortedArray.count - 1)
-print ("sorted ", quickSortedArray)

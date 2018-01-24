@@ -8,6 +8,11 @@
 
 import Cocoa
 
+//var unsortedArray = [ 11, 11, 11, 11, 11, 11]
+//print ("sorting Array ", unsortedArray)
+//var quickSortedArray = Sorting.quickSort(sortingArray: &unsortedArray, fromIndex: 0, toIndex: unsortedArray.count - 1)
+//print ("sorted ", quickSortedArray)
+
 class Sorting: NSObject {
 
     class func quickSort (sortingArray: inout [Int], fromIndex: Int, toIndex: Int) -> [Int] {
