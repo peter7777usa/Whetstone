@@ -10,3 +10,4 @@ import Foundation
 
 print("Hello, World! \n")
 
+print(Subsets.subsets(nums: [1,2,3]))

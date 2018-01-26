@@ -11,6 +11,7 @@
 		76612FDF200A130100E5A3B2 /* Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76612FDE200A130100E5A3B2 /* Tree.swift */; };
 		76612FE2200B916F00E5A3B2 /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76612FE1200B916F00E5A3B2 /* Graph.swift */; };
 		76612FE5200D382400E5A3B2 /* Fibonacci.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76612FE4200D382400E5A3B2 /* Fibonacci.swift */; };
+		767BABBD201B11120009CE34 /* Subsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767BABBC201B11120009CE34 /* Subsets.swift */; };
 		768860AD20100BD800A853FA /* DijkstraShortestPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768860AC20100BD800A853FA /* DijkstraShortestPath.swift */; };
 		76AC05522018201C0094EA77 /* SW3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AC05512018201C0094EA77 /* SW3.swift */; };
 		76CD6C5520037CDA00BD2B16 /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CD6C5420037CDA00BD2B16 /* Heap.swift */; };
@@ -35,6 +36,7 @@
 		76612FDE200A130100E5A3B2 /* Tree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tree.swift; sourceTree = "<group>"; };
 		76612FE1200B916F00E5A3B2 /* Graph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
 		76612FE4200D382400E5A3B2 /* Fibonacci.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fibonacci.swift; sourceTree = "<group>"; };
+		767BABBC201B11120009CE34 /* Subsets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subsets.swift; sourceTree = "<group>"; };
 		768860AC20100BD800A853FA /* DijkstraShortestPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DijkstraShortestPath.swift; sourceTree = "<group>"; };
 		76AC05512018201C0094EA77 /* SW3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SW3.swift; sourceTree = "<group>"; };
 		76CD6C5420037CDA00BD2B16 /* Heap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heap.swift; sourceTree = "<group>"; };
@@ -107,9 +109,18 @@
 			path = Fibonacci;
 			sourceTree = "<group>";
 		};
+		767BABBB201B10F90009CE34 /* Subset */ = {
+			isa = PBXGroup;
+			children = (
+				767BABBC201B11120009CE34 /* Subsets.swift */,
+			);
+			path = Subset;
+			sourceTree = "<group>";
+		};
 		76AC0550201820110094EA77 /* Mock */ = {
 			isa = PBXGroup;
 			children = (
+				767BABBB201B10F90009CE34 /* Subset */,
 				76AC05512018201C0094EA77 /* SW3.swift */,
 			);
 			path = Mock;
@@ -189,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				767BABBD201B11120009CE34 /* Subsets.swift in Sources */,
 				76612FE5200D382400E5A3B2 /* Fibonacci.swift in Sources */,
 				768860AD20100BD800A853FA /* DijkstraShortestPath.swift in Sources */,
 				76612FE2200B916F00E5A3B2 /* Graph.swift in Sources */,
