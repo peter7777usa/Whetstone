@@ -10,4 +10,4 @@ import Foundation
 
 print("Hello, World! \n")
 
-print(Subsets.subsets(nums: [1,2,3]))
+print(DecodeWays.numDecodings("1121212312"))

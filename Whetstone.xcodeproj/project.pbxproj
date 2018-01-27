@@ -15,6 +15,7 @@
 		768860AD20100BD800A853FA /* DijkstraShortestPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768860AC20100BD800A853FA /* DijkstraShortestPath.swift */; };
 		76AC05522018201C0094EA77 /* SW3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AC05512018201C0094EA77 /* SW3.swift */; };
 		76CD6C5520037CDA00BD2B16 /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CD6C5420037CDA00BD2B16 /* Heap.swift */; };
+		76D95CEF201BBA9D00CD3374 /* DecodeWays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D95CEE201BBA9D00CD3374 /* DecodeWays.swift */; };
 		76F7B50F2016931700C4CD12 /* Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F7B50E2016931700C4CD12 /* Sorting.swift */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +41,7 @@
 		768860AC20100BD800A853FA /* DijkstraShortestPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DijkstraShortestPath.swift; sourceTree = "<group>"; };
 		76AC05512018201C0094EA77 /* SW3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SW3.swift; sourceTree = "<group>"; };
 		76CD6C5420037CDA00BD2B16 /* Heap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heap.swift; sourceTree = "<group>"; };
+		76D95CEE201BBA9D00CD3374 /* DecodeWays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodeWays.swift; sourceTree = "<group>"; };
 		76F7B50E2016931700C4CD12 /* Sorting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sorting.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -120,6 +122,7 @@
 		76AC0550201820110094EA77 /* Mock */ = {
 			isa = PBXGroup;
 			children = (
+				76D95CED201BBA8300CD3374 /* Decode Ways */,
 				767BABBB201B10F90009CE34 /* Subset */,
 				76AC05512018201C0094EA77 /* SW3.swift */,
 			);
@@ -132,6 +135,14 @@
 				76CD6C5420037CDA00BD2B16 /* Heap.swift */,
 			);
 			path = Heap;
+			sourceTree = "<group>";
+		};
+		76D95CED201BBA8300CD3374 /* Decode Ways */ = {
+			isa = PBXGroup;
+			children = (
+				76D95CEE201BBA9D00CD3374 /* DecodeWays.swift */,
+			);
+			path = "Decode Ways";
 			sourceTree = "<group>";
 		};
 		76F7B50D2016930300C4CD12 /* Sort */ = {
@@ -207,6 +218,7 @@
 				76612FDF200A130100E5A3B2 /* Tree.swift in Sources */,
 				76F7B50F2016931700C4CD12 /* Sorting.swift in Sources */,
 				76AC05522018201C0094EA77 /* SW3.swift in Sources */,
+				76D95CEF201BBA9D00CD3374 /* DecodeWays.swift in Sources */,
 				7641668020021E5600214984 /* main.swift in Sources */,
 				76CD6C5520037CDA00BD2B16 /* Heap.swift in Sources */,
 			);
