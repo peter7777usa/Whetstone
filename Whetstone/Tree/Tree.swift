@@ -152,3 +152,94 @@ class Tree: NSObject {
         print (String(treeNode.dataNumber) + "" )
     }
 }
+
+
+//
+//
+//class Node: Hashable {
+//    
+//    var nodes = [Node]()
+//    var name = String()
+//    
+//    var hashValue: Int {
+//        return self.name.hashValue
+//    }
+//    
+//    static func ==(lhs: Node, rhs: Node) -> Bool {
+//        return false
+//    }
+//}
+//
+//var inputNodes =  [Node]()
+//
+//var occurenceTable = [Node: Int]()
+//
+//
+//func dfsCount (inputNode: Node) {
+//    occurenceTable[inputNode] = occurenceTable[inputNode]! + 1
+//    for node in inputNode.nodes {
+//        dfsCount(inputNode: node)
+//    }
+//}
+//
+//func sortOccurenceTable(occurenceTable: [Node: Int]) -> [(key: Node, value: Int)] {
+//    let sortedArrByValue = occurenceTable.sorted{$0.1 > $1.1}
+//    return sortedArrByValue
+//    
+//    // var resultArray = Array(occurenceTable.keys)
+//    // var sortedKeys = sort(resultArray) {
+//    //   var obj1 = occurenceTable[$0] // get ob associated w/ key 1
+//    //   var obj2 = occurenceTable[$1] // get ob associated w/ key 2
+//    //   return obj1 > obj2
+//    // }
+//}
+//
+//// var dict = ["cola" : 10, "fanta" : 12, "sprite" : 8]
+//// let sortedArrByValue = dict.sorted{$0.1 > $1.1}
+//
+//var nodeA = Node()
+//nodeA.name = "A"
+//var nodeB = Node()
+//nodeB.name = "B"
+//var nodeC = Node()
+//nodeC.name = "C"
+//var nodeD = Node()
+//nodeD.name = "D"
+//var nodeE = Node()
+//nodeE.name = "E"
+//var nodeF = Node()
+//nodeF.name = "F"
+//
+//nodeA.nodes.append(nodeC)
+//nodeA.nodes.append(nodeF)
+//
+//nodeB.nodes.append(nodeC)
+//nodeB.nodes.append(nodeF)
+//
+//nodeC.nodes.append(nodeF)
+//
+//nodeD.nodes.append(nodeB)
+//nodeD.nodes.append(nodeC)
+//nodeD.nodes.append(nodeF)
+//
+//nodeE.nodes.append(nodeF)
+//
+//inputNodes.append(nodeA)
+//inputNodes.append(nodeB)
+//inputNodes.append(nodeC)
+//inputNodes.append(nodeD)
+//inputNodes.append(nodeE)
+//inputNodes.append(nodeF)
+//
+//for node in inputNodes {
+//    dfsCount (inputNode: node)
+//}
+//
+//let resultArray = sortOccurenceTable(occurenceTable: occurenceTable)
+//
+//for node in resultArray {
+//    print (node.key.name)
+//}
+//
+//
+//

@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7600CB242023CABD002A0CAB /* CodePad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7600CB232023CABD002A0CAB /* CodePad.swift */; };
 		7641668020021E5600214984 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7641667F20021E5600214984 /* main.swift */; };
 		76612FDF200A130100E5A3B2 /* Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76612FDE200A130100E5A3B2 /* Tree.swift */; };
 		76612FE2200B916F00E5A3B2 /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76612FE1200B916F00E5A3B2 /* Graph.swift */; };
 		76612FE5200D382400E5A3B2 /* Fibonacci.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76612FE4200D382400E5A3B2 /* Fibonacci.swift */; };
 		767BABBD201B11120009CE34 /* Subsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767BABBC201B11120009CE34 /* Subsets.swift */; };
 		768860AD20100BD800A853FA /* DijkstraShortestPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768860AC20100BD800A853FA /* DijkstraShortestPath.swift */; };
+		769A2B4E20D9A09E004A57A2 /* RepeatedStringMatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769A2B4D20D9A09E004A57A2 /* RepeatedStringMatch.swift */; };
 		76AC05522018201C0094EA77 /* SW3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AC05512018201C0094EA77 /* SW3.swift */; };
 		76CD6C5520037CDA00BD2B16 /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CD6C5420037CDA00BD2B16 /* Heap.swift */; };
 		76D95CEF201BBA9D00CD3374 /* DecodeWays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D95CEE201BBA9D00CD3374 /* DecodeWays.swift */; };
@@ -32,6 +34,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7600CB232023CABD002A0CAB /* CodePad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodePad.swift; sourceTree = "<group>"; };
 		7641667C20021E5600214984 /* Whetstone */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Whetstone; sourceTree = BUILT_PRODUCTS_DIR; };
 		7641667F20021E5600214984 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		76612FDE200A130100E5A3B2 /* Tree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tree.swift; sourceTree = "<group>"; };
@@ -39,6 +42,7 @@
 		76612FE4200D382400E5A3B2 /* Fibonacci.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fibonacci.swift; sourceTree = "<group>"; };
 		767BABBC201B11120009CE34 /* Subsets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subsets.swift; sourceTree = "<group>"; };
 		768860AC20100BD800A853FA /* DijkstraShortestPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DijkstraShortestPath.swift; sourceTree = "<group>"; };
+		769A2B4D20D9A09E004A57A2 /* RepeatedStringMatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatedStringMatch.swift; sourceTree = "<group>"; };
 		76AC05512018201C0094EA77 /* SW3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SW3.swift; sourceTree = "<group>"; };
 		76CD6C5420037CDA00BD2B16 /* Heap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heap.swift; sourceTree = "<group>"; };
 		76D95CEE201BBA9D00CD3374 /* DecodeWays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodeWays.swift; sourceTree = "<group>"; };
@@ -119,12 +123,22 @@
 			path = Subset;
 			sourceTree = "<group>";
 		};
+		769A2B4A20D835CB004A57A2 /*   Repeated String Match */ = {
+			isa = PBXGroup;
+			children = (
+				769A2B4D20D9A09E004A57A2 /* RepeatedStringMatch.swift */,
+			);
+			path = "  Repeated String Match";
+			sourceTree = "<group>";
+		};
 		76AC0550201820110094EA77 /* Mock */ = {
 			isa = PBXGroup;
 			children = (
+				769A2B4A20D835CB004A57A2 /*   Repeated String Match */,
 				76D95CED201BBA8300CD3374 /* Decode Ways */,
 				767BABBB201B10F90009CE34 /* Subset */,
 				76AC05512018201C0094EA77 /* SW3.swift */,
+				7600CB232023CABD002A0CAB /* CodePad.swift */,
 			);
 			path = Mock;
 			sourceTree = "<group>";
@@ -213,6 +227,7 @@
 			files = (
 				767BABBD201B11120009CE34 /* Subsets.swift in Sources */,
 				76612FE5200D382400E5A3B2 /* Fibonacci.swift in Sources */,
+				769A2B4E20D9A09E004A57A2 /* RepeatedStringMatch.swift in Sources */,
 				768860AD20100BD800A853FA /* DijkstraShortestPath.swift in Sources */,
 				76612FE2200B916F00E5A3B2 /* Graph.swift in Sources */,
 				76612FDF200A130100E5A3B2 /* Tree.swift in Sources */,
@@ -221,6 +236,7 @@
 				76D95CEF201BBA9D00CD3374 /* DecodeWays.swift in Sources */,
 				7641668020021E5600214984 /* main.swift in Sources */,
 				76CD6C5520037CDA00BD2B16 /* Heap.swift in Sources */,
+				7600CB242023CABD002A0CAB /* CodePad.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
