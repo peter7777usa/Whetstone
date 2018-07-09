@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		7600CB242023CABD002A0CAB /* CodePad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7600CB232023CABD002A0CAB /* CodePad.swift */; };
+		762422F420F1BC8A0028FD10 /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762422F320F1BC8A0028FD10 /* Reminder.swift */; };
+		762422F720F3104D0028FD10 /* kemptyslot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762422F620F3104D0028FD10 /* kemptyslot.swift */; };
 		7641668020021E5600214984 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7641667F20021E5600214984 /* main.swift */; };
 		76612FDF200A130100E5A3B2 /* Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76612FDE200A130100E5A3B2 /* Tree.swift */; };
 		76612FE2200B916F00E5A3B2 /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76612FE1200B916F00E5A3B2 /* Graph.swift */; };
@@ -35,6 +37,8 @@
 
 /* Begin PBXFileReference section */
 		7600CB232023CABD002A0CAB /* CodePad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodePad.swift; sourceTree = "<group>"; };
+		762422F320F1BC8A0028FD10 /* Reminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
+		762422F620F3104D0028FD10 /* kemptyslot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kemptyslot.swift; sourceTree = "<group>"; };
 		7641667C20021E5600214984 /* Whetstone */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Whetstone; sourceTree = BUILT_PRODUCTS_DIR; };
 		7641667F20021E5600214984 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		76612FDE200A130100E5A3B2 /* Tree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tree.swift; sourceTree = "<group>"; };
@@ -60,9 +64,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		762422F520F3103C0028FD10 /* K Empty Slots */ = {
+			isa = PBXGroup;
+			children = (
+				762422F620F3104D0028FD10 /* kemptyslot.swift */,
+			);
+			path = "K Empty Slots";
+			sourceTree = "<group>";
+		};
 		7641667320021E5500214984 = {
 			isa = PBXGroup;
 			children = (
+				762422F320F1BC8A0028FD10 /* Reminder.swift */,
 				7641667E20021E5600214984 /* Whetstone */,
 				7641667D20021E5600214984 /* Products */,
 			);
@@ -134,6 +147,7 @@
 		76AC0550201820110094EA77 /* Mock */ = {
 			isa = PBXGroup;
 			children = (
+				762422F520F3103C0028FD10 /* K Empty Slots */,
 				769A2B4A20D835CB004A57A2 /*   Repeated String Match */,
 				76D95CED201BBA8300CD3374 /* Decode Ways */,
 				767BABBB201B10F90009CE34 /* Subset */,
@@ -232,8 +246,10 @@
 				76612FE2200B916F00E5A3B2 /* Graph.swift in Sources */,
 				76612FDF200A130100E5A3B2 /* Tree.swift in Sources */,
 				76F7B50F2016931700C4CD12 /* Sorting.swift in Sources */,
+				762422F720F3104D0028FD10 /* kemptyslot.swift in Sources */,
 				76AC05522018201C0094EA77 /* SW3.swift in Sources */,
 				76D95CEF201BBA9D00CD3374 /* DecodeWays.swift in Sources */,
+				762422F420F1BC8A0028FD10 /* Reminder.swift in Sources */,
 				7641668020021E5600214984 /* main.swift in Sources */,
 				76CD6C5520037CDA00BD2B16 /* Heap.swift in Sources */,
 				7600CB242023CABD002A0CAB /* CodePad.swift in Sources */,
