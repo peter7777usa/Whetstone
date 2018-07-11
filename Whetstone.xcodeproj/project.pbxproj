@@ -10,6 +10,7 @@
 		7600CB242023CABD002A0CAB /* CodePad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7600CB232023CABD002A0CAB /* CodePad.swift */; };
 		762422F420F1BC8A0028FD10 /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762422F320F1BC8A0028FD10 /* Reminder.swift */; };
 		762422F720F3104D0028FD10 /* kemptyslot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762422F620F3104D0028FD10 /* kemptyslot.swift */; };
+		7624230720F58DD20028FD10 /* LongestUnivaluePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7624230620F58DD20028FD10 /* LongestUnivaluePath.swift */; };
 		7641668020021E5600214984 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7641667F20021E5600214984 /* main.swift */; };
 		76612FDF200A130100E5A3B2 /* Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76612FDE200A130100E5A3B2 /* Tree.swift */; };
 		76612FE2200B916F00E5A3B2 /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76612FE1200B916F00E5A3B2 /* Graph.swift */; };
@@ -39,6 +40,7 @@
 		7600CB232023CABD002A0CAB /* CodePad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodePad.swift; sourceTree = "<group>"; };
 		762422F320F1BC8A0028FD10 /* Reminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
 		762422F620F3104D0028FD10 /* kemptyslot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kemptyslot.swift; sourceTree = "<group>"; };
+		7624230620F58DD20028FD10 /* LongestUnivaluePath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongestUnivaluePath.swift; sourceTree = "<group>"; };
 		7641667C20021E5600214984 /* Whetstone */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Whetstone; sourceTree = BUILT_PRODUCTS_DIR; };
 		7641667F20021E5600214984 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		76612FDE200A130100E5A3B2 /* Tree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tree.swift; sourceTree = "<group>"; };
@@ -70,6 +72,14 @@
 				762422F620F3104D0028FD10 /* kemptyslot.swift */,
 			);
 			path = "K Empty Slots";
+			sourceTree = "<group>";
+		};
+		7624230520F58DAC0028FD10 /* Longest Univalue Path  */ = {
+			isa = PBXGroup;
+			children = (
+				7624230620F58DD20028FD10 /* LongestUnivaluePath.swift */,
+			);
+			path = "Longest Univalue Path ";
 			sourceTree = "<group>";
 		};
 		7641667320021E5500214984 = {
@@ -147,6 +157,7 @@
 		76AC0550201820110094EA77 /* Mock */ = {
 			isa = PBXGroup;
 			children = (
+				7624230520F58DAC0028FD10 /* Longest Univalue Path  */,
 				762422F520F3103C0028FD10 /* K Empty Slots */,
 				769A2B4A20D835CB004A57A2 /*   Repeated String Match */,
 				76D95CED201BBA8300CD3374 /* Decode Ways */,
@@ -250,6 +261,7 @@
 				76AC05522018201C0094EA77 /* SW3.swift in Sources */,
 				76D95CEF201BBA9D00CD3374 /* DecodeWays.swift in Sources */,
 				762422F420F1BC8A0028FD10 /* Reminder.swift in Sources */,
+				7624230720F58DD20028FD10 /* LongestUnivaluePath.swift in Sources */,
 				7641668020021E5600214984 /* main.swift in Sources */,
 				76CD6C5520037CDA00BD2B16 /* Heap.swift in Sources */,
 				7600CB242023CABD002A0CAB /* CodePad.swift in Sources */,
