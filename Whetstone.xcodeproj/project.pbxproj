@@ -15,8 +15,10 @@
 		76612FDF200A130100E5A3B2 /* Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76612FDE200A130100E5A3B2 /* Tree.swift */; };
 		76612FE2200B916F00E5A3B2 /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76612FE1200B916F00E5A3B2 /* Graph.swift */; };
 		76612FE5200D382400E5A3B2 /* Fibonacci.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76612FE4200D382400E5A3B2 /* Fibonacci.swift */; };
+		7670BE6021014008007C1BEE /* Notif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7670BE5F21014008007C1BEE /* Notif.swift */; };
 		767BABBD201B11120009CE34 /* Subsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767BABBC201B11120009CE34 /* Subsets.swift */; };
 		768860AD20100BD800A853FA /* DijkstraShortestPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768860AC20100BD800A853FA /* DijkstraShortestPath.swift */; };
+		769587AD21091D0F00BEE381 /* downloadImg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769587AC21091D0F00BEE381 /* downloadImg.swift */; };
 		769A2B4E20D9A09E004A57A2 /* RepeatedStringMatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769A2B4D20D9A09E004A57A2 /* RepeatedStringMatch.swift */; };
 		76AC05522018201C0094EA77 /* SW3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AC05512018201C0094EA77 /* SW3.swift */; };
 		76CD6C5520037CDA00BD2B16 /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CD6C5420037CDA00BD2B16 /* Heap.swift */; };
@@ -46,8 +48,10 @@
 		76612FDE200A130100E5A3B2 /* Tree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tree.swift; sourceTree = "<group>"; };
 		76612FE1200B916F00E5A3B2 /* Graph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
 		76612FE4200D382400E5A3B2 /* Fibonacci.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fibonacci.swift; sourceTree = "<group>"; };
+		7670BE5F21014008007C1BEE /* Notif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notif.swift; sourceTree = "<group>"; };
 		767BABBC201B11120009CE34 /* Subsets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subsets.swift; sourceTree = "<group>"; };
 		768860AC20100BD800A853FA /* DijkstraShortestPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DijkstraShortestPath.swift; sourceTree = "<group>"; };
+		769587AC21091D0F00BEE381 /* downloadImg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = downloadImg.swift; sourceTree = "<group>"; };
 		769A2B4D20D9A09E004A57A2 /* RepeatedStringMatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatedStringMatch.swift; sourceTree = "<group>"; };
 		76AC05512018201C0094EA77 /* SW3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SW3.swift; sourceTree = "<group>"; };
 		76CD6C5420037CDA00BD2B16 /* Heap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heap.swift; sourceTree = "<group>"; };
@@ -102,6 +106,8 @@
 		7641667E20021E5600214984 /* Whetstone */ = {
 			isa = PBXGroup;
 			children = (
+				769587AB21091D0200BEE381 /* Download Image */,
+				7670BE5E21013FF1007C1BEE /* Notif */,
 				76AC0550201820110094EA77 /* Mock */,
 				76F7B50D2016930300C4CD12 /* Sort */,
 				76612FE3200CEC7000E5A3B2 /* Fibonacci */,
@@ -138,12 +144,28 @@
 			path = Fibonacci;
 			sourceTree = "<group>";
 		};
+		7670BE5E21013FF1007C1BEE /* Notif */ = {
+			isa = PBXGroup;
+			children = (
+				7670BE5F21014008007C1BEE /* Notif.swift */,
+			);
+			path = Notif;
+			sourceTree = "<group>";
+		};
 		767BABBB201B10F90009CE34 /* Subset */ = {
 			isa = PBXGroup;
 			children = (
 				767BABBC201B11120009CE34 /* Subsets.swift */,
 			);
 			path = Subset;
+			sourceTree = "<group>";
+		};
+		769587AB21091D0200BEE381 /* Download Image */ = {
+			isa = PBXGroup;
+			children = (
+				769587AC21091D0F00BEE381 /* downloadImg.swift */,
+			);
+			path = "Download Image";
 			sourceTree = "<group>";
 		};
 		769A2B4A20D835CB004A57A2 /*   Repeated String Match */ = {
@@ -256,7 +278,9 @@
 				768860AD20100BD800A853FA /* DijkstraShortestPath.swift in Sources */,
 				76612FE2200B916F00E5A3B2 /* Graph.swift in Sources */,
 				76612FDF200A130100E5A3B2 /* Tree.swift in Sources */,
+				7670BE6021014008007C1BEE /* Notif.swift in Sources */,
 				76F7B50F2016931700C4CD12 /* Sorting.swift in Sources */,
+				769587AD21091D0F00BEE381 /* downloadImg.swift in Sources */,
 				762422F720F3104D0028FD10 /* kemptyslot.swift in Sources */,
 				76AC05522018201C0094EA77 /* SW3.swift in Sources */,
 				76D95CEF201BBA9D00CD3374 /* DecodeWays.swift in Sources */,

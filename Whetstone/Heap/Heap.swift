@@ -8,6 +8,12 @@
 
 import Cocoa
 
+//let closure: (Int, Int) -> Int = { (number1, number2) in
+//    return number1 + number2
+//}
+//print(closure(8,2))
+
+
 //let heap = Heap()
 //let originalHeap = [4, 3, 7, 1, 8, 5]
 //print ("Org Heap ", originalHeap)
