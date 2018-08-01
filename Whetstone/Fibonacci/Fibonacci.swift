@@ -9,24 +9,25 @@
 import Foundation
 
 class Fibonacci {
-    func fib (i: Int) -> Int {
+    
+    var fib = [Int]()
+    
+    class func fib (i: Int) -> Int {
         if i <= 1 { return i }
         return fib(i: i - 1) + fib(i: i - 2)
     }
     
     func fibonacci(n: Int) {
+        fib = Array(repeating: 0, count: n+2)
+        fib[0] = 0
+        fib[1] = 1
         
-        var num1 = 0
-        var num2 = 1
-        
-        for _ in 0 ..< n {
-            
-            let num = num1 + num2
-            num1 = num2
-            num2 = num
+        if n > 1 {
+            for i in 2 ..< n+1 {
+                fib[i] = fib[i-1] + fib[i-2]
+            }
         }
-        
-        print("result = \(num2)")
+        print("result = ", fib[n])
     }
     //fibonacci(7)
     
@@ -42,6 +43,7 @@ class Fibonacci {
             print("result = \(num2)")
         }
     }
-   // fibonacciRecursiveNum1(0, num2: 1, steps: 7)
+    // fibonacciRecursiveNum1(0, num2: 1, steps: 7)
 }
+
 

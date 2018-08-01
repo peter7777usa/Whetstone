@@ -43,9 +43,8 @@ public final class NotificationCenterImpl: NotificationCenter {
             // notificationDic[notification] = notificationArray
         } else {
             var notificationArray = [Observer]()
-            queue.async (.barrier) {
-              notificationArray.append(observer)
-                
+            queue.async(flags: .barrier) {
+                notificationArray.append(observer)
             }
             
             notificationDic[notification] = notificationArray

@@ -15,7 +15,7 @@
 // 
 // Your image-fetcher must handle repeated fetches for the same URL
 // such that the url-request-client is not called more than necessary.
-// 
+//
 // Note: Everything should be on the main thread. */
 //
 //// =========== url-request-client (given) =================================
@@ -39,19 +39,19 @@
 //// =========== image fetcher (please implement) =================================
 //public class DBImageFetcher: DBImageURLRequestClientDelegate {
 //    public typealias DBImageFetcherBlock = (UIImage) -> ()
-//    
+//
 //    public static let sharedInstance = DBImageFetcher()
-//    
+//
 //    private let client = DBImageURLRequestClient()
 //    private let cache = DBImageCache<URL>()
-//    
+//
 //    var returnBlockDict : [Key: [DBImageFetcherBlock]]
 //    var returnBlock: DBImageFetcherBlock
-//    
+//
 //    private init() {
 //        client.delegate = self
 //    }
-//    
+//
 //    public func fetchImageForURL(url: URL, onSuccess: DBImageFetcherBlock) {
 //        if let cacheImage = cache.image(key: url) {
 //            onSucess(cacheImage)
@@ -60,7 +60,7 @@
 //            returnBlock = onSuccess
 //        }
 //    }
-//    
+//
 //    public func didDownloadImage(_ image: UIImage, forURL url: URL) {
 //        cahce.setImage(image: image forkey: url)
 //        returnBlock(image)
