@@ -12,6 +12,7 @@
 		762422F720F3104D0028FD10 /* kemptyslot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762422F620F3104D0028FD10 /* kemptyslot.swift */; };
 		7624230720F58DD20028FD10 /* LongestUnivaluePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7624230620F58DD20028FD10 /* LongestUnivaluePath.swift */; };
 		7641668020021E5600214984 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7641667F20021E5600214984 /* main.swift */; };
+		76416BFB2194C65900981BFA /* ClosestXDestinations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76416BFA2194C65900981BFA /* ClosestXDestinations.swift */; };
 		76612FDF200A130100E5A3B2 /* Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76612FDE200A130100E5A3B2 /* Tree.swift */; };
 		76612FE2200B916F00E5A3B2 /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76612FE1200B916F00E5A3B2 /* Graph.swift */; };
 		76612FE5200D382400E5A3B2 /* Fibonacci.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76612FE4200D382400E5A3B2 /* Fibonacci.swift */; };
@@ -45,6 +46,7 @@
 		7624230620F58DD20028FD10 /* LongestUnivaluePath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongestUnivaluePath.swift; sourceTree = "<group>"; };
 		7641667C20021E5600214984 /* Whetstone */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Whetstone; sourceTree = BUILT_PRODUCTS_DIR; };
 		7641667F20021E5600214984 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		76416BFA2194C65900981BFA /* ClosestXDestinations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosestXDestinations.swift; sourceTree = "<group>"; };
 		76612FDE200A130100E5A3B2 /* Tree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tree.swift; sourceTree = "<group>"; };
 		76612FE1200B916F00E5A3B2 /* Graph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
 		76612FE4200D382400E5A3B2 /* Fibonacci.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fibonacci.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 		7641667E20021E5600214984 /* Whetstone */ = {
 			isa = PBXGroup;
 			children = (
+				76416BF92194C63700981BFA /* Amazon closest x destination */,
 				769587AB21091D0200BEE381 /* Download Image */,
 				7670BE5E21013FF1007C1BEE /* Notif */,
 				76AC0550201820110094EA77 /* Mock */,
@@ -117,6 +120,14 @@
 				7641667F20021E5600214984 /* main.swift */,
 			);
 			path = Whetstone;
+			sourceTree = "<group>";
+		};
+		76416BF92194C63700981BFA /* Amazon closest x destination */ = {
+			isa = PBXGroup;
+			children = (
+				76416BFA2194C65900981BFA /* ClosestXDestinations.swift */,
+			);
+			path = "Amazon closest x destination";
 			sourceTree = "<group>";
 		};
 		76612FDD200A12F400E5A3B2 /* Tree */ = {
@@ -273,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				767BABBD201B11120009CE34 /* Subsets.swift in Sources */,
+				76416BFB2194C65900981BFA /* ClosestXDestinations.swift in Sources */,
 				76612FE5200D382400E5A3B2 /* Fibonacci.swift in Sources */,
 				769A2B4E20D9A09E004A57A2 /* RepeatedStringMatch.swift in Sources */,
 				768860AD20100BD800A853FA /* DijkstraShortestPath.swift in Sources */,
