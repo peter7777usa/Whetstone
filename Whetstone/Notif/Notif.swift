@@ -8,16 +8,6 @@
 
 import Foundation
 
-
-//
-//@synchornize {
-//
-//}
-//
-//recursive lock
-
-import Foundation
-
 public typealias Callback = (_ notification: String, _ data: Any) -> Void
 
 public protocol Observer: AnyObject {
@@ -37,10 +27,9 @@ public final class NotificationCenterImpl: NotificationCenter {
     var notificationDic = [String: [Observer]]()
     
     public func addObserver(for notification: String, observer: Observer) {
-        // @synchornize {
+
         if var notificationArray =  notificationDic[notification] {
             notificationArray.append(observer)
-            // notificationDic[notification] = notificationArray
         } else {
             var notificationArray = [Observer]()
             queue.async(flags: .barrier) {
@@ -56,8 +45,10 @@ public final class NotificationCenterImpl: NotificationCenter {
         if var notificationArray = notificationDic[notification] {
             for (index, obs) in notificationArray.enumerated() {
                 if obs === observer {
-                    notificationArray.remove(at: index)
-                    notificationDic[notification] = notificationArray
+                    queue.async(flags: .barrier) { [weak self] in
+                        notificationArray.remove(at: index)
+                        self?.notificationDic[notification] = notificationArray
+                    }
                 }
             }
         }

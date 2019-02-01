@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4074424222039DB4006E74D9 /* NotificationQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4074424122039DB4006E74D9 /* NotificationQuestion.swift */; };
 		7600CB242023CABD002A0CAB /* CodePad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7600CB232023CABD002A0CAB /* CodePad.swift */; };
 		762422F420F1BC8A0028FD10 /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762422F320F1BC8A0028FD10 /* Reminder.swift */; };
 		762422F720F3104D0028FD10 /* kemptyslot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762422F620F3104D0028FD10 /* kemptyslot.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4074424122039DB4006E74D9 /* NotificationQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationQuestion.swift; sourceTree = "<group>"; };
 		7600CB232023CABD002A0CAB /* CodePad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodePad.swift; sourceTree = "<group>"; };
 		762422F320F1BC8A0028FD10 /* Reminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
 		762422F620F3104D0028FD10 /* kemptyslot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kemptyslot.swift; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 		7670BE5E21013FF1007C1BEE /* Notif */ = {
 			isa = PBXGroup;
 			children = (
+				4074424122039DB4006E74D9 /* NotificationQuestion.swift */,
 				7670BE5F21014008007C1BEE /* Notif.swift */,
 			);
 			path = Notif;
@@ -297,6 +300,7 @@
 				76AC05522018201C0094EA77 /* SW3.swift in Sources */,
 				76D95CEF201BBA9D00CD3374 /* DecodeWays.swift in Sources */,
 				762422F420F1BC8A0028FD10 /* Reminder.swift in Sources */,
+				4074424222039DB4006E74D9 /* NotificationQuestion.swift in Sources */,
 				7624230720F58DD20028FD10 /* LongestUnivaluePath.swift in Sources */,
 				7641668020021E5600214984 /* main.swift in Sources */,
 				76CD6C5520037CDA00BD2B16 /* Heap.swift in Sources */,
