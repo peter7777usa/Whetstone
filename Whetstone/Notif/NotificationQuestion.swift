@@ -21,10 +21,9 @@ public protocol MSNotificationCenter {
     func postNotification(_ notification: String, data: Any)
 }
 
-/// Implement the this class to use MSNotificationCeter to observe/post notifications
+
 public final class SomeRandomClass{
-
-
+/// Implement the this class to use MSNotificationCeter to observe/post notifications
 }
 
 
