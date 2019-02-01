@@ -39,5 +39,5 @@ public final class SomeRandomClass{
 /// Step 2, assessment of programming skills, knowledge of common data structures like Hashtables
 /// Candidate should come up with a [Key: [Observer]] container and finish the implementation of the NotificationCenter methods
 
-/// Step 3, Ask for what happen if multiple thread is using this NotificationCenter class, will it crash? Gives Hint, looking for a solution to a thread safe dictionary
+/// Step 3, Ask for what happen if multiple thread is using this NotificationCenter class, will it crash? 
 /// Test for understanding of GCD, Sync/Async, serial/concurrent, what will happen if multiple thread is mutating the Container

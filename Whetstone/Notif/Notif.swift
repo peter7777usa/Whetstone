@@ -41,7 +41,6 @@ public final class NotificationCenterImpl: NotificationCenter {
     }
     
     public func removeObserver(_ observer: Observer, for notification: String) {
-        //@synchornize {
         if var notificationArray = notificationDic[notification] {
             for (index, obs) in notificationArray.enumerated() {
                 if obs === observer {
@@ -52,23 +51,18 @@ public final class NotificationCenterImpl: NotificationCenter {
                 }
             }
         }
-        //  }
-        
-        //    Dispatch.global.sync {
-        //
-        //    }
     }
     
     public func postNotification(_ notification: String, data: Any) {
-        if var notificationArray = notificationDic[notification] {
-            for obs in notificationArray {
-                obs.callback(notification, data)
+        if let notificationArray = notificationDic[notification] {
+            queue.sync {
+                for obs in notificationArray {
+                    obs.callback(notification, data)
+                }
             }
         }
     }
 }
-
-//let notificationCenter = NotificationCenterImpl()
 
 
 
